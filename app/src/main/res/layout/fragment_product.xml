@@ -1,0 +1,62 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                app:cpv_indeterminate="true"
+                android:id="@+id/loading_"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:cpv_color="@color/loading_circle"
+                android:layout_marginTop="200dp"
+                />
+
+            <TextView
+                android:id="@+id/__message__"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_promo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Promociones -"
+                android:gravity="center"
+                android:textSize="@dimen/text_big"
+                android:visibility="gone"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_products"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/button_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/textDark"
+                android:text="Ir al restaurante"
+                android:background="@drawable/w_button"
+                android:visibility="gone"
+                />
+
+</LinearLayout>

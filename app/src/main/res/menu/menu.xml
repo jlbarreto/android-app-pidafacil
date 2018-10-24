@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pidafacil.pidafacil.LoginPidaFacil">
+    <item
+        android:id="@+id/shopping_car"
+        android:title="@string/next"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_principal"
+        android:title="@string/next"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always" />
+
+</menu>

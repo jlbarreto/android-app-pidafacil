@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pidafacil.pidafacil" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission android:name="com.pidafacil.pidafacil.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.pidafacil.pidafacil.permission.C2D_MESSAGE" />
+
+    <!-- Optional permission for reliable local dispatching on non-Google Play devices -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.pidafacil.pidafacil.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!-- android:largeHeap="true" aumentar capacidad de memoria -->
+
+        <!-- Add the following meta-data for devices running Google Play service. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+           installation campaign reporting -->
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <!-- appboy receiver -->
+        <receiver android:name="com.appboy.AppboyGcmReceiver" android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.pidafacil.pidafacil" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.pidafacil.pidafacil.components.AppboyPidaFacilGCMReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.pidafacil.pidafacil.intent.APPBOY_PUSH_RECEIVED" />
+                <action android:name="com.pidafacil.pidafacil.intent.APPBOY_NOTIFICATION_OPENED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Appboy behaviors-->
+        <activity android:name="com.appboy.ui.AppboyWebViewActivity" android:theme="@android:style/Theme" />
+        <activity android:name="com.appboy.ui.activities.AppboyFeedActivity" android:theme="@android:style/Theme" />
+
+        <!--deeplink -->
+        <activity android:name=".activities.DeepLinkParserActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <!-- Handles any pidafacil://show URI's -->
+            <data android:scheme="pidafacil" android:host="show"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+        </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <provider android:authorities="com.facebook.app.FacebookContentProvider308079659365029"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/app_name"
+            android:theme="@style/MyNavigationDrawerTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_pida_facil_login"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activities.LoginPidaFacil"
+            android:label="@string/title_activity_pida_facil_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="@string/title_activity_pida_facil_login"
+            android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pidafacil.pidafacil.activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.OrderActivity"
+            android:label="@string/title_activity_order"
+            android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:parentActivityName=".activities.LoginActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail"
+            android:parentActivityName=".activities.OrderActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pidafacil.pidafacil.activities.OrderActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ShoppingCartActivity"
+            android:label="@string/title_shopping_cart"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activities.CompleteRequestActivity"
+            android:label="@string/title_navbar_activity_order_complete"
+            android:parentActivityName=".activities.ShoppingCartActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pidafacil.pidafacil.activities.ShoppingCartActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.PayMethodActivity"
+            android:label="@string/title_activity_account"
+            android:parentActivityName=".activities.CompleteRequestActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pidafacil.pidafacil.activities.CompleteRequestActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AddressActivity"
+            android:label="@string/title_activity_address"
+            android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.AddressDetailActivity"
+            android:label="@string/title_activity_address_detail"
+            android:parentActivityName=".activities.AddressActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AddressActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddAddressActivity"
+            android:label="@string/title_activity_add_address"
+            android:parentActivityName=".activities.AddressActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AddressActivity" />
+        </activity>
+
+        <activity android:name=".activities.ZoomAnimation"
+            >
+        </activity>
+    </application>
+
+</manifest>

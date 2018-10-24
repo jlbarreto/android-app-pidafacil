@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Login Buttons-->
+
+    <LinearLayout
+        android:id="@+id/lay_login_data"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.facebook.login.widget.LoginButton
+                xmlns:fb="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                fb:login_text="Facebook"
+                android:textStyle="normal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_sign_in"
+                android:text="Google +"
+                android:textAllCaps="false"
+                android:background="@drawable/google"
+                android:textColor="@color/textPrimary"
+                android:layout_marginBottom="10sp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_link_pf_login"
+                android:text="E-Mail"
+                android:textAllCaps="false"
+                android:background="@drawable/email"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_marginBottom="10sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- User profile -->
+
+    <LinearLayout
+        android:id="@+id/lay_account__"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img__"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/user_dark"
+            app:border_width="2dp"
+            app:border_color="@color/primaryColor"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center|center_horizontal" />
+
+        <TextView
+            android:id="@+id/txt_user_name__"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Profile Name"
+            />
+
+        <TextView
+            android:id="@+id/txt_user_email__"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="email@domain.com"/>
+
+        <LinearLayout
+            android:id="@+id/lay_buttons___"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            >
+
+            <Button
+                android:id="@+id/button_requests__"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/b_button"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="50dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:text="Pedidos"/>
+
+            <Button
+                android:id="@+id/button_addresses__"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/b_button"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Direcciones"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/txt_close_session__"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/textDark"
+            android:text="Salir"
+            android:background="@drawable/w_button"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

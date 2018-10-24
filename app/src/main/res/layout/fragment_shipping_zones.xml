@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/zonas_title"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_big"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="..."
+            android:textSize="@dimen/text_big"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_zone_1" />
+
+        <TextView
+            android:text="* Los tiempos de entrega estimados incluyen los tiempos promedios de elaboración del pedido, la distancia y el tráfico de ese día y hora para llegar al domicilio. PidaFacil hará su mejor esfuerzo por cumplirlos, pero estos pueden variar.\n* Ubicaciones fuera de las arriba mencionadas favor consultar previamente. \n* Nos reservamos el derecho de excluir lugares específicos aunque pertenezcan a nuestras zonas de cobertura."
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

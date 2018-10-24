@@ -1,0 +1,13 @@
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+pidafacil-android.iml
+PidaFacil.iml
+settings.gradle
+.gradle/
+.idea/
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+build/

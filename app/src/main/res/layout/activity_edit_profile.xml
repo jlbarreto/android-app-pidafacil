@@ -1,0 +1,89 @@
+ <LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     tools:context="com.pidafacil.pidafacil.EditProfileActivity"
+     android:focusableInTouchMode="true"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/background">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/__message__"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Debes iniciar sesion"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/_content_"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme">
+
+        <EditText
+            android:id="@+id/txt_name_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textSize="20sp"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/txt_lastname_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:hint="Apellido"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/birthdate_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:hint="Fecha de nacimiento"
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"
+            android:hint="@string/phone_placeholder"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btn_update"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_big" />
+
+    </LinearLayout>
+
+</LinearLayout>

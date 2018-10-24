@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">PidaFacil</string>
+
+    <string name="app_version">PidaFacil v1.0.15</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">308079659365029</string>
+    <integer name="google_play_services_version">7895000</integer>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Navigate</string>
+
+    <string name="search">Buscar</string>
+
+    <string name="products_prompt">Cantidad</string>
+    <string name="title_activity_complete_request">Completar Orden</string>
+    <string name="address_title"> Seleccione una Dirección:</string>
+    <string name="title_activity_add_address">Nueva Dirección</string>
+    <string name="title_activity_pay_method">Método de Pago</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_address">Direcciones</string>
+    <string name="title_activity_account">Cuenta</string>
+    <string name="pagination_page_size">10</string>
+    <string name="spin_mes">Mes</string>
+    <string name="spin_year">Año</string>
+    <string name="title_activity_pida_facil_login">PidaFacilLogin</string>
+    <string name="title_activity_register">Registrarse</string>
+    <string name="title_activity_address_detail">AddressDetailActivity</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
+    <string name="title_activity_section">SectionActivity</string>
+    <string name="title_activity_restaurant_information">RestaurantInformationActivity</string>
+    <string name="support_chat_connect_title">Atención al Cliente</string>
+    <string name="support_chat_connecting">Atención al Cliente</string>
+    <string name="support_chat_connected">Atención al Cliente (En línea)</string>
+    <string name="support_chat_serverhost">http://soporte.pidafacil.com</string>
+    <string name="uri_zones_">http://pidafacil.com/zones_mobile</string>
+    <string name="paymethodStr">Método de pago</string>
+    <string name="comments">Comentarios</string>
+    <string name="add_to_cart">Agregar</string>
+    <string name="quantity">Cantidad:</string>
+    <string name="service_type_label">Tipo de servicio:</string>
+    <string name="select_service_type_label">Seleccione un tipo de servicio</string>
+    <string name="hour_label">Hora:</string>
+    <string name="select_hour_label">Seleccione una hora</string>
+    <string name="cash_label">Efectivo a pagar:</string>
+    <string name="dollar_sign">$</string>
+    <string name="total_discount">Descuento:</string>
+    <string name="pay_total">Total a pagar:</string>
+    <string name="change_label">Cambio:</string>
+    <string name="accept_btn">Aceptar</string>
+    <string name="card_owner">Titular</string>
+    <string name="card_number">Número de tarjeta</string>
+    <string name="card_code">CVV</string>
+    <string name="expiration_date_label">Fecha de vencimiento:</string>
+    <string name="month_label">Mes:</string>
+    <string name="year_label">Año:</string>
+    <string name="payment_method_label">Método de pago:</string>
+    <string name="subtotal_label">Subtotal:</string>
+    <string name="card_charge">Cargo de tarjeta:</string>
+    <string name="card">Tarjeta</string>
+    <string name="cash">Efectivo</string>
+    <string name="unexpected_error_msg">No se pudo mostrar el resultado, por favor intenta de nuevo</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="send_to_cart">Enviar a carrito</string>
+    <string name="enter_phone_number">Ingresa tu número telefónico</string>
+
+    <string name="card_owner_label">Titular:</string>
+    <string name="card_number_label">Número:</string>
+    <string name="card_date_label">Vencimiento:</string>
+
+    <string name="order_shipping_label">Costo de envío:</string>
+
+    <string name="address">Seleccione una dirección:</string>
+    <string name="address_select">Seleccione una dirección</string>
+    <string name="payment_method_title_label">Forma de Pago:</string>
+    <string name="select_payment_method_label">Elija un método de pago</string>
+    <string name="payment_method_title">Agrega los datos de tu tarjeta</string>
+
+    <string name="product_ingredients_btn">Elegir ingredientes</string>
+    <string name="login_credentials_label">Ingresa tu correo electrónico y contraseña</string>
+    <string name="delivery_label">Domicilio</string>
+    <string name="pickup_label">Para llevar</string>
+    <string name="order_customer_label">Nombre:</string>
+    <string name="order_customer_phone_label">Teléfono:</string>
+
+    <!--FIELDS-->
+    <string name="name_placeholder">Nombre</string>
+    <string name="lastname_placeholder">Apellido</string>
+    <string name="phone_placeholder">Número telefónico</string>
+    <string name="email_placeholder">Correo electrónico</string>
+    <string name="pwd_placeholder">Contraseña</string>
+    <string name="pwd_repeat_placeholder">Su contraseña nuevamente</string>
+    <string name="select_shipping_zone">Elige tu zona:</string>
+    <string name="order_customer_name_placeholder">Ingresa el nombre de quién recibe la orden</string>
+    <string name="order_customer_phone_placeholder">Para contactarte en caso sea necesario</string>
+    <!--END-->
+
+    <!--BUTTONS-->
+    <string name="btn_sign_up">Registrarse con correo electrónico</string>
+    <string name="btn_update">Actualizar</string>
+    <string name="btn_checkout">Siguiente</string>
+    <string name="btn_add_to_cart">Agregar al carrito</string>
+    <string name="btn_buy">Comprar</string>
+    <string name="btn_save_address">Guardar dirección</string>
+    <string name="btn_add_address">Agregar dirección</string>
+    <string name="btn_update_address">Actualizar dirección</string>
+    <!--END-->
+
+    <!--TITLES-->
+    <string name="title_activity_signup">Ingresa tus datos</string>
+    <string name="title_navbar_activity_edit_profile">Editar perfil</string>
+    <string name="title_navbar_activity_order_complete">Tu Orden</string>
+    <string name="missing_data">Faltan datos requeridos</string>
+    <string name="order_comple">Orden completada</string>
+    <string name="title_shopping_cart">Carrito de compras</string>
+    <string name="title_signup_activity">"Iniciar sesión / Registrarse"</string>
+    <string name="title_login_activity">"Iniciar sesión"</string>
+    <!--END-->
+
+    <!--ACTION BAR ICON-->
+    <string name="ab_add_new">Agregar</string>
+    <!--END-->
+
+
+    <!--ERRORS-->
+    <string name="no_phone_number">Por favor ingresa un número telefónico al que podamos contactarte en caso sea necesario.</string>
+    <string name="no_order_address">Debes seleccionar una dirección.</string>
+    <string name="no_order_time">Debes ingresar la hora a la que pasarás a recoger tu pedido.</string>
+    <string name="card_owner_error">Por favor ingresa el Titular de la tarjeta.</string>
+    <string name="card_number_error">Por favor ingresa el Número de la tarjeta.</string>
+    <string name="tgmoney_number_error">Por favor ingresa el Número a Debitar.</string>
+    <string name="dir1_error"> La dirección de tener almenos 6 caracteres", "Faltan datos por completar.</string>
+    <string name="card_code_error">Por favor ingresa el Código de Seguridad de la tarjeta (Normalmente se encuentra al reverso de la tarjeta).</string>
+    <string name="no_customer_name">Por favor ingresa el nombre de la persona que recibirá la orden.</string>
+    <!--END-->
+
+    <!--MESSAGES-->
+    <string name="profile_updated">Tus datos se han actualizado</string>
+    <string name="continue_shopping">Presiona en Procesar para continuar con tu compra</string>
+    <!--END-->
+
+    <!--APPBOY CUSTOM EVENTS-->
+    <string name="appboy_signup">Sign Up</string>
+    <string name="appboy_login">Log In</string>
+    <string name="appboy_card_abandoned">Cart Abandoned</string>
+    <string name="appboy_order_abandoned">Order Abandoned</string>
+    <string name="appboy_tarjeta_rechazada">Tarjeta Rechazada por el Banco</string>
+    <string name="appboy_add_address">Agregar dirección</string>
+    <string name="appboy_go_cart">Ir al Carrito</string>
+    <string name="appboy_share_product">Share Product</string>
+    <string name="txtWhatsApp">Escríbenos por WhatsApp</string>
+    <string name="txtWhatsApp2">¿Consultas?</string>
+    <string name="txtNumWhatsApp">+503 ...</string>
+    <string name="tgMoney_number">Número a Debitar: </string>
+    <string name="tgMoney">Tigo Money</string>
+    <string name="tmoney_title_label">Agrega los datos de tu billetera</string>
+    <string name="tgMoney_billetera_label">Selecciona tu Billetera: </string>
+    <string name="tgMoney_number_hint">Número de teléfono asociado a Billetera.</string>
+    <string name="tgMoney_charge">Cargo de Tigo Money</string>
+    <string name="zonas_title">Tiempo de entrega aproximado y costo.</string>
+    <string name="Realizando_compra">       Procesando el pago. \nEspere un momento por favor.</string>
+    <string name="ubicando">       Capturando su ubicación. \nEspere un momento por favor.</string>
+    <string name="Procesando_coordenadas">  Obteniendo coordenadas. \nEspere un momento por favor.</string>
+    <string name="tiempo_entrega">Tiempo de entrega estimado:</string>
+    <string name="tiempo_estimado">Tiempo de entrega estimado a esta hora.</string>
+    <string name="compartir_coordenadas">Comparte tu ubicación para una entrega más rápida</string>
+    <!--END-->
+
+    <string-array name="products_quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="months_arr">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+
+    <string-array name="billetera_arr">
+        <item>Dinero recibido local</item>
+        <item>Mis abonos</item>
+        <item>Dinero recibido internacional</item>
+    </string-array>
+
+    <string-array name="months_num_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="deptos">
+        <item>San Salvador</item>
+        <item>La libertad</item>
+        <item>Santa Ana</item>
+        <item>San Vicente</item>
+        <item>San Miguel</item>
+        <item>Morazán</item>
+        <item>Sonsonate</item>
+        <item>Ahuchapan</item>
+        <item>La Union</item>
+        <item>Morazán</item>
+        <item>Cabañas</item>
+        <item>Cuscatlan</item>
+        <item>La Paz</item>
+        <item>Chalatenango</item>
+    </string-array>
+
+    <string-array name="menu_titles">
+        <item>Inicio</item>
+        <item>Explorar</item>
+        <item>Promociones</item>
+        <item>Repetir pedido</item>
+        <item>Mi Perfil</item>
+        <item>Carrito</item>
+        <item>Ayuda</item>
+    </string-array>
+    <string name="no_gps_title">Servicios de ubicación inhabilitados</string>
+    <string name="no_internet_title">Sin conexión a Internet</string>
+    <string name="gps_network_not_enabled">Para continuar se necesita acceder a tu ubicación. Activa el GPS.</string>
+    <string name="no_internet_available">Para continuar debes tener una conexión a Internet. \n Activa los servicios de datos o conéctate a una red Wi-Fi con Internet.</string>
+    <string name="ignore">Ignorar</string>
+    <string name="gps_network_settings">Configuración</string>
+    <string name="appboy_no_internet">NO INTERNET</string>
+    <string name="costo_por_zona">Costo de envío por zona</string>
+    <string name="no_gps_title2">Debes habilitar los servicios de ubicacion.</string>
+    <string name="si">Si</string>
+    <string name="No">No</string>
+    <string name="lbl_nuevo_login">¿Nuevo en PidaFacil?</string>
+    <string name="lbl_nuevo_login2">Crear Cuenta.</string>
+    <string name="lbl_nuevo_">(No postearemos sin tu permiso)</string>
+    <string name="lbl_iniciar_">Iniciar Sesión.</string>
+
+</resources>

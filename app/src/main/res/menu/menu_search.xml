@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pidafacil.pidafacil.MainActivity">
+
+    <item
+        android:id="@+id/searchview_"
+        android:title="@string/search"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        appcompat:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/shopping_car"
+        android:title="@string/next"
+        android:icon="@drawable/ic_shopping_cart"
+        android:actionLayout="@layout/action_bar_notification_icon"
+        appcompat:actionLayout="@layout/action_bar_notification_icon"
+        appcompat:showAsAction="always"/>
+</menu>

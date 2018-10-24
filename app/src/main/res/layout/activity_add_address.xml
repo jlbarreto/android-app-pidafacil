@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddAddressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/add_address_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical">
+
+     <LinearLayout android:id="@+id/add_address_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de dirección (Ej:Casa, Trabajo, etc)"
+            android:inputType="textCapSentences"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/txt_dir1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:hint="Dirección"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapSentences"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/txt_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapSentences"
+            android:hint="Referencia (Ej:Frente a parque Bicentenario)"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_normal_plus"
+                android:text="@string/select_shipping_zone"/>
+
+            <Spinner
+                android:id="@+id/spin_zonas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compartir_coordenadas"
+                android:id="@+id/textView"
+                android:textSize="@dimen/text_normal_plus" />
+
+            <RadioGroup android:id="@+id/rdgCoordenadasGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@+id/rdbCoordenadasSi"
+                android:gravity="center">
+
+                <RadioButton android:id="@+id/rdbCoordenadasSi"
+                    android:textSize="@dimen/text_big"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/si"
+                    android:layout_margin="20dp" />
+
+                <RadioButton android:id="@+id/rdbCoordenadasNo"
+                    android:textSize="@dimen/text_big"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/No"
+                    android:layout_margin="20dp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txt_coordenadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Coordenadas (Ej:13.706317, -89.245266)"
+            android:inputType="textCapSentences"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/btn_save_address"
+            android:textSize="@dimen/text_big"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+        <LinearLayout android:id="@+id/sending_add"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                app:cpv_indeterminate="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:cpv_color="@color/loading_circle"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/progress_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/ubicando"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_shape">
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+

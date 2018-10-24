@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_food_types"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_moods"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/__message__"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:textSize="@dimen/text_normal"
+            android:text="No se encontraron restaurantes."
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            app:cpv_indeterminate="true"
+            android:id="@+id/loading_"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:cpv_color="@color/accentColor"
+            android:layout_marginTop="80dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_restaurants_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

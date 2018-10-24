@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Rahat/Git/CircularProgressView/circularprogressview/src/main/res/values/values.xml -->
+    <eat-comment/>
+    <color name="material_blue_500">#2196F3</color>
+    <declare-styleable name="CircularProgressView"><attr format="float" name="cpv_progress"/><attr format="float" name="cpv_maxProgress"/><attr format="integer" name="cpv_animDuration"/><attr format="color" name="cpv_color"/><attr format="dimension" name="cpv_thickness"/><attr format="boolean" name="cpv_indeterminate"/><attr format="boolean" name="cpv_animAutostart"/><attr format="integer" name="cpv_animSteps"/></declare-styleable>
+    <!-- From: file:/C:/Users/Rahat/Git/CircularProgressView/circularprogressview/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">CircularProgressView</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_appboy_api_key">2df182b9-5ffa-4b47-b3a5-8067c2f04a5b</string>
+    <bool name="com_appboy_push_gcm_messaging_registration_enabled">true</bool>
+    <string name="com_appboy_push_gcm_sender_id">224078556945</string>
+    <drawable name="com_appboy_push_small_notification_icon">@drawable/ic_restaurant</drawable>
+</resources>

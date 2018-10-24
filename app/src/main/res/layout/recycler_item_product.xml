@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:padding="2.5dp"
+        android:layout_margin="5dp"
+        android:background="@color/transparent_card">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/genr_icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:paddingTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/genr_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/genr_lbltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_big"
+                />
+
+            <TextView
+                android:id="@+id/genr_lbltextdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_grid_normal"
+                />
+
+            <TextView
+                android:id="@+id/lbl_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold"
+                android:gravity="end"
+                />
+        </LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nirhart.parallaxscroll.views.ParallaxScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:parallax_factor="1.9"
+    app:alpha_factor="1.9">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_res_logo__"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:ignore="HardcodedText"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_res_logo2__"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="-135dp"
+            android:layout_gravity="center|center_horizontal" />
+
+        <TextView
+            android:id="@+id/text_res_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text_res_slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_res_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_res_horarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_res_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_res_hubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

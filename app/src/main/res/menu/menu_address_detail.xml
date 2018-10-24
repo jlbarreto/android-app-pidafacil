@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pidafacil.pidafacil.activities.AddressDetailActivity">
+
+    <item
+        android:id="@+id/ab_add_address"
+        android:title="@string/ab_add_new"
+        app:showAsAction="always" />
+
+</menu>

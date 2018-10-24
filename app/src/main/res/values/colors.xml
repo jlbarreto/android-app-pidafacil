@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#424242</color>
+    <color name="primaryColorBold">#373737</color>
+    <color name="primaryColorDark">#212121</color>
+    <color name="accentColor">#757575</color>
+    <color name="transparent_card">#80000000</color>
+    <color name="windowBackgroundColor">#E8EAF6</color>
+    <color name="textPrimary">#FAFAFA</color>
+    <color name="textPrimaryBold">#cdcdcd</color>
+    <color name="textSecondary">#616161</color>
+    <color name="textDark">#000000</color>
+    <color name="textPrimaryColor">#212121</color>
+    <color name="cardColor">#90A4AE</color>
+    <color name="gridColorBackground">#f14950</color>
+    <color name="gridLigthColor">#80ffffff</color>
+    <color name="backgroundDark">#000000</color>
+    <color name="promp_background">#6E6E6E</color>
+    <color name="text_blue">#013ADF</color>
+    <color name="green">#5FB74B</color>
+    <color name="green_pressed">#589b58</color>
+    <color name="yellow">#f1c40f</color>
+    <color name="yellow_pressed">#dcb50f</color>
+
+    <color name="google">#dd4b39</color>
+    <color name="facebook">#3b579d</color>
+    <color name="email">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="loading_circle">#ffffff</color>
+
+    <color name="chat_support_user_cl">#3498db</color>
+    <color name="chat_support_user_supp">#e74c3c</color>
+
+    <!-- date-time pickers color -->
+    <color name="mdtp_accent_color">@color/cardColor</color>
+    <color name="mdtp_accent_color_dark">@color/primaryColorDark</color>
+
+    <color name="support_chat_user">#dd4b39</color>
+    <color name="textGray">#808080</color>
+</resources>

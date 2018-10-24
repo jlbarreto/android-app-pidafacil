@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PidaFacilLogin" >
+
+        <LinearLayout
+            android:id="@+id/lay_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/login_credentials_label"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/txt_email_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:hint="Correo electrónico"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:hint="Contraseña"/>
+
+            <EditText
+                android:id="@+id/txt_password_confirm_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:hint="Confirme su contraseña"/>
+
+            <Button
+                android:id="@+id/button_pf_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/b_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="Entrar"
+                android:textSize="@dimen/text_big"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>
